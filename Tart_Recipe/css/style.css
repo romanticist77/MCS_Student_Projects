@@ -12,6 +12,15 @@
 	padding-left: 20px;
 }
 
+.title h1, a {
+	display: inline;
+}
+
+.title h1 {
+	text-align: right;
+	color: #FFFFFF;
+}
+
 .recipe-container {
 	height: 904px;
 	width: 1440px;
