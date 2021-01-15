@@ -16,8 +16,8 @@
 	display: inline;
 }
 
-.title h1 {
-	text-align: right;
+.title a {
+	padding-left: 390px;
 	color: #FFFFFF;
 }
 
