@@ -39,6 +39,7 @@ html {
 .header a {
 	color: var(--color-first);
 	padding-right: var(--padding-primarily);
+	text-decoration: none;
 }
 
 .main {
