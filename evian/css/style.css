@@ -1,151 +1,155 @@
 @import url(reset.css);
 
-.logo-container {
-	height: 140px;
-	width: 1440px;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+/* Хедер */
+
+.header {
 	background-color: #FFFFFF;
-	background-image: url(../img/evian.png);
-	background-repeat: no-repeat;
-	background-position: 50px 50px;
-	line-height: 140px;
-	text-align: right;
-	padding-right: 50px;
+	width: 100%;
 	font-family: Arial;
-	font-size: 50px;
+	font-size: 5rem;
+	line-height: 14rem;
+	color: #E50043;
 	position: fixed;
 }
 
-.logo-container a {
-	color: #E50043;
+.header-container {
+ 	display: flex;
 }
+
+.span {
+	margin: 0 5rem 0 auto;
+	display: flex;
+}
+
+.span a {
+	color: #E50043;
+	text-decoration: none;
+}
+
+.header-container h1 {
+	margin-left: 5rem;
+}
+
+.middle-link {
+	margin: 0 2.5rem;
+}
+
+/* Основной блок */
 
 .main {
-	height: 2129px;
-	width: 1440px;
+	padding-top: 14rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 2.5rem;
+	line-height: 2.9rem;
+	font-family: Arial;
 }
+
+/* Секция 1 */
 
 .hero-container {
-	padding-top: 140px;
-	height: 950px;
-	width: 1440px;
 	background-image: url(../img/evian_origins_logo.png);
-	background-repeat: no-repeat;
-	background-position: 0px 140px;
-	font-family: Arial;
-	font-size: 100px;
+	background-position: center;
+	background-size: cover;
+	height: 95rem;
+	width: 100%;
+	font-size: 10rem;
 	color: #E50043;
-	text-align: center;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.hero-container h1 {
-	margin: auto;
-}
+/* Секция 2 */
 
-.info-container {
-	height: 663px;
-	width: 1440px;
-	display: flex;
-	
-}
 
-.info {
-	display: flex;
-	margin: auto;
-}
-
-.info h1 {
-	width: 1040px;
-	height: 280px;
-	border: 3px solid #F8BFC7;
-	box-sizing: border-box;
-	border-radius: 20px; 
-	font-family: Arial;
-	font-size: 25px;
-	line-height: 29px;
-	padding: 24px;
-	letter-spacing: 0.8px;
-}
-
-.info h1 {
-}
-
-.image-container {
-	height: 863px;
-	width: 1040px;
+.img-container {
+	width: 104rem;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	padding-left: 200px;
 }
 
-.image1 {
-	height: 863px;
-	width: 281px;
-	background-image: url(../img/wang.png); 
+/*разделы с текстом */
+
+.text-info {
+	border: 0.3rem solid #F8BFC7;
+	border-radius: 2rem;
+	width: 104rem;
+	padding: 2.4rem;
+	margin: 15rem 0;
+}
+
+.first h1, .first p {
+	letter-spacing: 0.12rem;
+}
+
+.text-info h1, .text-info p, .text-info ul {
+	padding-bottom: 2.9rem;
+}
+
+/*разделы с фото */
+
+.type1 {
+	height: 86.3rem;
+	width: 28.1rem;
+}
+
+.type2 {
+	height: 86.3rem;
+	width: 27.9rem;
+}
+
+.type3 {
+	height: 86.3rem;
+	width: 28.0rem;
+}
+
+figcaption {
+	margin: 4.2rem 0 0;
+}
+
+.photo {
 	background-repeat: no-repeat;
+	text-align: center;
+	margin-bottom: 10rem;
 }
 
-.image2 {
-	height: 863px;
-	width: 281px;
-	background-image: url(../img/blue.png); 
-	background-repeat: no-repeat;
-}
+/* крайний див */
 
-.image3 {
-	height: 863px;
-	width: 281px;
-	background-image: url(../img/chiara.png); 
-	background-repeat: no-repeat;
-}
-
-.bottom-info {
-	height: 663px;
-	width: 1440px;
-	display: flex;
-}
-
-/* .img {
+.img-bottom {
 	float: left;
-	padding-top: 30px;
-	padding-left: 20px;
-}
-*/
-
-.info2 {
-	width: 1040px;
-	height: 280px;
-	display: flex;
-	margin: auto;
-	border: 3px solid #F8BFC7;
-	box-sizing: border-box;
-	border-radius: 20px;
-	padding-top: 30px;
-	padding-left: 77px;
-	padding-bottom: 30px;
-	font-family: Arial;
-	font-size: 25px;
-	letter-spacing: 0.8px;
-	line-height: 29px;
-	white-space: pre;
+	padding: 0 8rem;
 }
 
-.info2 h1 {
-	padding-left: 80px;
-	padding-bottom: 30px;
+.second {
+	padding: 3rem;
+	letter-spacing: 0.05rem;
+	margin-top: 15.6rem;
 }
 
-.copyrights {
-	height: 140px;
-	width: 1440px;
-	position: relative;
-	top: 1226px;
+/* футер */
+
+.footer {
 	background-color: #F8BFC7;
+	width: 100%;
+	height: 14rem;
 	font-family: Arial;
-	font-size: 50px;
-	line-height: 140px;
-	text-align: left;
+	font-size: 5rem;
+	line-height: 14rem;
 	color: #FFFFFF;
+	text-align: left;
 	padding-left: 50px;
 }
