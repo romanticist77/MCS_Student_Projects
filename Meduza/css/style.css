@@ -1,0 +1,291 @@
+@import url(reset.css);
+@font-face {
+	font-family: 'ProximaNova';
+	src: url(../fonts/ProximaNova-Black.ttf);
+	font-family: 'ProximaNova_bold';
+	src: url(../fonts/ProximaNova-Semibold.ttf);
+	font-family: 'PFRegalTextPro';
+	src: url(../fonts/PFRegalTextPro-RegularA.ttf);
+}
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: ProximaNova_bold, sans-serif;
+	background-color: #000000;
+
+}
+
+.body {
+	padding: 26rem 0 0;
+
+}
+
+.header {
+	border-top: 1px solid #2b2b2b;
+	display: flex;
+	width: 95vw;
+	justify-content: space-between;
+	margin: 0 auto 0;
+	padding: 4rem 0 0;
+	color: white;
+}
+
+.header__logo {
+	margin: 0 0 0 0;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	/* width: 54rem; */
+	width: 54rem;
+}
+
+.nav a {
+	color: white;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+#header__golden {
+	color: #A37846;
+}
+
+.lang_bar {
+	font-size: 1.5rem;
+	display: flex;
+}
+
+.lang_bar a {
+	margin: 0 2rem 0 0;
+	color: #FFFFFF;
+	text-decoration: none;
+} 
+
+.lang_bar p {
+	margin: 0 2rem 0 0;
+}
+
+.lang_bar__search {
+	width: 2rem;
+  	height: 2rem;
+  	border: 1px solid #FFFFFF;
+  	border-radius: 50%;
+}
+
+.lang_bar__transform {
+	height: 0.55rem;
+	width: 0;
+	transform: rotate(-45deg);
+	border: 1px solid #FFFFFF;
+	position: relative;
+	top: 1.6rem;
+	left: 1.6rem;
+}
+
+.currency {
+	margin: 3.5vw auto 0;
+	width: 95vw;
+	line-height: 5.6rem;
+	background-color: #FFFFFF;
+	border-radius: 1rem;
+	border: 1px solid red;
+	color: black;
+	font-size: 1.7rem;
+	padding: 0 1vw;
+	display: flex;
+	justify-content: space-between;
+}
+
+.currency__switch {
+	color: #9CA1A9;
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+}
+
+
+
+.currency__circle {
+  width: 2rem;
+  height: 2rem;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+
+.currency__rectangle {
+  width: 4.8rem;
+  height: 2.4rem;
+  background: #E6E6E6;
+  border-radius: 2.5rem;
+}
+
+.main {
+	width: 95vw;
+	background-color: #F2F2F2;
+	margin: 1.5rem auto 0;
+	border-radius: 1rem 1rem 0 0;
+	padding: 6rem 6rem 8.8rem;
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	justify-content: space-between;
+}
+
+.main section {
+	border-radius: 1rem;
+	background-color: #FFFFFF;
+	margin: auto;
+	width: 100%;
+}
+
+.main__section1 {
+	text-align: center;
+	border: 0.5rem solid #A37846;
+	padding: 4.5rem 6.6rem 2.9rem;
+	height: 25rem;
+	width: 100%;
+}
+
+.main__headline1 {
+	color: #000000;
+	font-size: 5rem;
+	font-family: PFRegalTextPro;
+	text-decoration: none;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+}
+
+.main__headline1 h1 {
+	height: 100%;
+	width: 100%;
+}
+
+.main__time {
+	color: #9CA1A9;
+	font-size: 1.5rem;
+	margin: auto;
+}
+
+.main__section2 {
+	border: 0.1rem solid #9CA1A9;
+	padding: 3rem;
+	display: flex;
+
+}
+
+.article {
+	width: 50%;
+}
+
+.main__articles {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 3.5rem;
+
+}
+
+.article__header_bigger, .article__header {
+	font-family: PFRegalTextPro;
+	width: 100%;
+	height: 100%;
+}
+
+.article__header_bigger {
+	font-size: 3.5rem;
+	color: #000000;
+	margin: 0 0 0;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.article__header_bigger h1 {
+	width: 100%;
+	height: 100%;
+}
+
+.article__header {
+	font-size: 2rem;
+	text-decoration: none;
+	display: inline-block;
+}
+
+.article__header h1 {
+	width: 100%;
+	height: 100%;
+}
+
+.article__date {
+	color: #9CA1A9;
+}
+
+.article__mini {
+	width: 45%;
+	height: 17rem;
+	margin: auto;
+}
+
+.upperfooter {
+	height: 47.4rem;
+	color: #FFFFFF;
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.5rem;
+	padding: 5rem 10.7rem 7rem;
+
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+}
+
+.column__part {
+	margin: 0 0 3.4rem;
+}
+
+.column__headline {
+	text-transform: uppercase;
+	margin: 0 0 2.4rem;
+}
+
+.column__ul {
+	line-height: 1.8rem;
+}
+
+.column__link {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.lowerfooter {
+	width: 104rem;
+	border-top: 1px solid #FFFFFF;
+	line-height: 11.2rem;
+	color: #FFFFFF;
+	font-size: 1.5rem;
+	margin: 0 auto;
+	padding: 0 0 0 3.5rem;
+}
+
+
+
+/* Proxima Nova,Arial,Helvetica Neue,sans-serif
+.currency__text {
+	border: 1px solid red;
+}
+	.main__article {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+	/* <img src="img/ellipse.png" alt="loupe">
+	font-family: ProximaNova, sans-serif; /*
