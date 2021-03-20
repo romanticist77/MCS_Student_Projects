@@ -126,6 +126,9 @@ body {
 		width: 100vw;
 		margin: 0 0 0 1rem;
 	}
+
+	
+
 	.main {
 		flex-direction: row;
 		
@@ -151,7 +154,7 @@ body {
 	.article__img_float{
 		float: none;
 		width: 39rem;
-		margin: 0 0 9rem 0.75rem;
+		margin: 0 0 9rem 0.5rem;
 	}
 	.article__date_overtext, .article__headline_big {
 		position: relative;
@@ -175,10 +178,10 @@ body {
 		margin: auto;
 		position: absolute;
 		top: 160rem;
+		width: 41.4rem;
 	}
 	.footer__nav_bar {
 		flex-direction: column;
 		line-height: 2.962rem;
-		width: 41.4rem;
 	}
 } 
