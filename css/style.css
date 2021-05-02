@@ -1,0 +1,73 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+/*Установил фон и размер 1 rem*/
+
+html {
+	font-size: 62.5%;
+	font-family: Helvetica;
+	background-image: url(../img/Whatsapp-Wallpaper-107.jpg);
+	background-size: cover;
+}
+/*Сбросил подчеркивание ссылок*/
+
+a {
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+/*ФЛЕКСом центрировал ГРИД*/
+
+.GRID-container {
+	display: flex;
+	height: 33vw;
+}
+
+/*Настроил главный ГРИД*/
+
+.GRID {
+	margin: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr minmax(min-content, max-content);
+	grid-row-gap: 1rem;
+	grid-column-gap: 3rem;
+	font-size: 1.4rem;
+}
+
+/*Настроил вложенный ГРИД*/
+
+.SUB-GRID__section {
+	grid-area: 3 / 1 / 4 / 3;
+}
+
+.section5 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	grid-column-gap: 1rem;
+	grid-row-gap: 3rem;
+}
+
+/*ФЛЕКСом выровнил иконки по центру*/
+
+.section5__flex-item {
+	display: flex;
+	margin: auto;
+}
+
+.section5__flex-item {
+	height: 10rem;
+	width: 10rem;
+}
+
+.section5__flex-item {
+  	transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+ }
+
+.section5__flex-item:hover {
+  	transform: translateY(-7px);
+}

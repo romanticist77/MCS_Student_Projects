@@ -7,27 +7,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-	<div>
-		<main>
-			<h1>Мои учебные веб-страницы</h1>
-			<ul>
-				<li><a href="Ryder_Ripps/index.html">Интернет-художник Райдер Риппс</a></li>
-				<li><a href="Some_next_projects/index.html">Следующие проекты</a></li>
-			</ul>
-			<h1>Бонусные проекты</h1>
-			<ul>
-				<li><a href="Supreme/home_page/index.html">Китайская подделка сайта Supreme</a></li>
-				<li><a href="Supreme/news_page/index.html">Страница с новостями Supreme</a></li>
-				<li><a href="Meduza/index.html">Кремлевский клон Meduza</a></li>
-			</ul>
-			<h1>Написал стили для http://www.csszengarden.com/</h1>
-			<ul>
-				<li><a href="css_zen_garden/index.html">CSS Zen Garden</a></li>
-			</ul>
-			<h1>Использовал GRID на сайте https://moscoding.ru/</h1>
-			<ul>
-				<li><a href="MCS/index.html">MCS</a></li>
-			</ul>
+	<div class="GRID-container">
+		<main class="GRID">
+			<section class="GRID__section section1">
+				<h1>Мои учебные веб-страницы</h1>
+				<ul>
+					<li><a href="Ryder_Ripps/index.html">Интернет-художник Райдер Риппс</a></li>
+					<li><a href="Some_next_projects/index.html">Следующие проекты</a></li>
+				</ul>
+			</section>
+			<section class="GRID__section section2">
+				<h1>Бонусные проекты</h1>
+				<ul>
+					<li><a href="Supreme/home_page/index.html">Китайская подделка сайта Supreme</a></li>
+					<li><a href="Supreme/news_page/index.html">Страница с новостями Supreme</a></li>
+					<li><a href="Meduza/index.html">Кремлевский клон Meduza</a></li>
+				</ul>
+			</section>
+			<section class="GRID__section section3">
+				<h1>Написал стили для http://www.csszengarden.com/</h1>
+				<ul>
+					<li><a href="css_zen_garden/index.html">CSS Zen Garden</a></li>
+				</ul>
+			</section>
+			<section class="GRID__section section4">
+				<h1>Использовал GRID на сайте https://moscoding.ru/</h1>
+				<ul>
+					<li><a href="MCS/index.html">MCS</a></li>
+				</ul>
+			</section>
+			<section class="GRID__section SUB-GRID__section">
+				<h1>GRID auto-fit</h1>
+				<div class="section5">
+					<section class="section5__flex-item">
+						<img src="img/facebook.png" alt="min-hh-red">
+					</section>
+					<section class="section5__flex-item">
+						<img src="img/instagram.png" alt="min-hh-red">
+					</section>
+					<section class="section5__flex-item">
+						<img src="img/vk.png" alt="min-hh-red">
+					</section>
+					<section class="section5__flex-item">
+						<img src="img/twitter.png" alt="min-hh-red">
+					</section>
+					<section class="section5__flex-item">
+						<img src="img/whatsapp.png" alt="min-hh-red">
+					</section class="section5__flex-item">
+				</div>
+				
+			</section>
 		</main>
 	</div>
 </body>
