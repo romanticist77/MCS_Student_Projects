@@ -11,6 +11,8 @@ html {
 	font-family: 'Helvetica',sans-serif;
 }
 
+/*link hover */
+
 .link:hover {
 	cursor: pointer;
 	color: black;
@@ -19,6 +21,7 @@ html {
 .link {
 	transition: all 200ms ease;
 }
+/*body width*/ 
 
 body {
 	width: 100vw;
@@ -126,6 +129,8 @@ body {
 .main__search-container {
 	padding-top: 0.65rem;
 	display: flex;
+	position: relative;
+	left: 1.4rem;
 }
 
 /* Inputs */
@@ -294,42 +299,74 @@ body {
 	font-size: 1.35rem;
 }
 
+/*usimg media queries for diifferent devices*/
 
-
-
-
-
-/*
-<div class="main__card one"></div>
-		<div class="main__card two"></div>
-		<div class="main__card three"></div>
-		<div class="main__card four"></div>
-		<div class="main__card five"></div>
-		<div class="main__card six"></div>
-
-
-
-		/* <li class="main__card seven"></li>
-			<li class="main__card eight"></li>
-			<li class="main__card nine"></li>
-
-			.main__card.title {
-	grid-column: 1/4;
-	grid-row: 1/2;
+@media all and (max-width: 992px) {
+    .main__list {
+    grid-template-columns: repeat(2, 34.8rem);
+    grid-template-rows: repeat(3, 45rem);
+    }
+    .one h4 {
+    	position: relative;
+    	bottom: 3.5rem;
+    }
+    .two h4 {
+    	position: relative;
+    	bottom: 3.5rem;
+    }
+    .three h4 {
+    	position: relative;
+    	bottom: 4rem;
+    }
+    .header__container {
+    	width: auto;
+    	padding: 0 5.4rem;
+    }
+    .footer__container {
+    	width: auto;
+    	padding: 0 5.4rem;
+    }
+    .main__form-container h1 {
+    padding-right: 10.5rem;
+    }
 }
-::placeholder {
-	color: #FFFFFF;
-	opacity: 1;
+
+@media all and (max-width: 720px) {
+	.main__list {
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(6, 41.1rem);
+    }
+    .one, .two, .three, .four, .five, .six {
+    background-size: 36.6rem 21.1rem;
+    }
 }
 
-/*	background-color: #FFFFFF; */
-
-
-	/* margin: 4rem 0 4rem 8rem;
-
-				<a class="link" href="#">КАМРАН А</a>
-
-				/* background-image: url(../img/logo.svg);
-	background-repeat: no-repeat;
-	background-size: 10.8rem;
-	background-position: left center;*/
+@media all and (max-width: 540px) {
+	.main__list {
+    grid-template-rows: repeat(6, 45rem);
+    }
+    .header__container {
+    	width: auto;
+    	padding: 0 1.8rem;
+    }
+    .footer__container {
+    	width: auto;
+    	padding: 0 1.8rem;
+    }
+    .main {
+    	padding: 0;
+    }
+    .main__form-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 1.8rem;
+	}
+	.main__search-container input {
+	padding-left: 0rem;
+	}
+	.main__search-container {
+	position: relative;
+	left: 0;
+	}
+}

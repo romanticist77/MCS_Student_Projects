@@ -8,7 +8,6 @@
 html {
 	font-size: 62.5%;
 	font-family: Helvetica;
-	background-image: url(../img/Whatsapp-Wallpaper-107.jpg);
 	background-size: cover;
 }
 /*Сбросил подчеркивание ссылок*/
@@ -16,6 +15,11 @@ html {
 a {
 	text-decoration: none;
 	font-size: 1.5rem;
+}
+
+.body {
+	background-image: url(../img/Whatsapp-Wallpaper-107.jpg);
+	padding: 2rem;
 }
 
 /*ФЛЕКСом центрировал ГРИД*/
@@ -69,5 +73,25 @@ a {
  }
 
 .section5__flex-item:hover {
-  	transform: translateY(-7px);
+  	transform: translateY(-0.7rem);
+}
+
+/*использую media queries для устройств с меньшим дисплеем*/
+
+@media all and (max-width: 992px) {
+	.GRID {
+		grid-template-columns: 1fr; 
+		}
+
+	.GRID__section {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+	.section5__flex-item {
+		height: 3.3rem;
+		width: 3.3rem;
+	}
+	.SUB-GRID__section {
+		grid-row: 5/6;
+	}
 }
