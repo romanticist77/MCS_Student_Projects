@@ -95,3 +95,10 @@ a {
 		grid-row: 5/6;
 	}
 }
+
+@media all and (max-width: 576px) {
+	.section5__flex-item {
+		height: 1.1rem;
+		width: 1.1rem;
+	}
+}
