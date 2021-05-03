@@ -101,4 +101,8 @@ a {
 		height: 1.1rem;
 		width: 1.1rem;
 	}
+	.section5 {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(1.1rem, 3.3rem));	
+	}
 }
