@@ -103,6 +103,6 @@ a {
 	}
 	.section5 {
 		display: grid;
-		grid-template-columns: repeat(5, 1.1rem);	
+		grid-template-columns: repeat(5, minmax(min-content, max-content));	
 	}
 }
