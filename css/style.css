@@ -61,7 +61,7 @@ a {
 	margin: auto;
 }
 
-.section5__flex-item {
+.section5__flex-item img {
 	height: 10rem;
 	width: 10rem;
 }
@@ -87,7 +87,7 @@ a {
 		grid-column-start: 1;
 		grid-column-end: 3;
 	}
-	.section5__flex-item {
+	.section5__flex-item img {
 		height: 3.3rem;
 		width: 3.3rem;
 	}
@@ -97,7 +97,7 @@ a {
 }
 
 @media all and (max-width: 576px) {
-	.section5__flex-item {
+	.section5__flex-item img {
 		height: 1.1rem;
 		width: 1.1rem;
 	}
