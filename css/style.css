@@ -103,6 +103,6 @@ a {
 	}
 	.section5 {
 		display: grid;
-		grid-template-columns: repeat(5, 1fr);	
+		grid-template-columns: repeat(5, 1.1rem);	
 	}
 }
