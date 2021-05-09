@@ -46,7 +46,6 @@ a {
 	width: 90rem;
 	padding: 5rem;
 }
-
 .GRID__section {
 	/*fallbacks*/
 	width: calc(100% / 2);
@@ -60,7 +59,6 @@ a {
 	/*fallbacks*/
 	width: 90rem;
 }
-
 .section5 {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -79,7 +77,6 @@ a {
 	width: 10rem;
 	position: center;
 }
-
 .section5__flex-item {
   	transition: all 0.3s ease 0s;
     cursor: pointer;
@@ -87,7 +84,6 @@ a {
     display: flex;
     margin: auto;
  }
-
 .section5__flex-item:hover {
   	transform: translateY(-0.7rem);
 }
@@ -103,7 +99,6 @@ a {
 		flex-direction: column;
 		align-items: center;
 		}
-
 	.GRID__section {
 		grid-column-start: 1;
 		grid-column-end: 3;
@@ -112,7 +107,6 @@ a {
 		width: 70%;
 		min-height: 7rem;
 	}
-
 	.section5__flex-item img {
 		height: 5rem;
 		width: 5rem;
@@ -123,7 +117,6 @@ a {
 		/*fallbacks*/
 		width: 100%;
 	}
-	
 }
 
 @media all and (max-width: 576px) {
@@ -135,13 +128,10 @@ a {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(3.3rem, 1fr));
 	}
-
 	.GRID__section {
 		width: 100%;
 		padding: 0 1rem;
 	}
-	
-
 }
 /*использую feature queries для описания свойств CSS GRID*/
 
