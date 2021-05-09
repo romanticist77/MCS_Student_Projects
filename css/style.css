@@ -105,4 +105,8 @@ a {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(3.3rem, 1fr));
 	}
+
+	.GRID {
+		width: 90vw;
+	}
 }
