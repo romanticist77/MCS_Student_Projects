@@ -11,6 +11,31 @@ html {
 	font-family: 'Helvetica',sans-serif;
 }
 
+/*fallbacks*/
+
+.main__card {
+	width: 36.4rem;
+	height: 44.8rem;
+}
+
+.main__list {
+	width: 115.5rem;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.five {
+	margin: 0 3rem;
+}
+
+.two {
+	margin: 0 3rem 4.5rem;
+}
+
+.one, .three {
+	margin: 0 0 4.5rem;
+}
+
 /*link hover */
 
 .link:hover {
@@ -21,6 +46,7 @@ html {
 .link {
 	transition: all 200ms ease;
 }
+
 /*body width*/ 
 
 body {
@@ -303,8 +329,21 @@ body {
 
 @media all and (max-width: 992px) {
     .main__list {
-    grid-template-columns: repeat(2, 34.8rem);
-    grid-template-rows: repeat(3, 45rem);
+    	grid-template-columns: repeat(2, 34.8rem);
+    	grid-template-rows: repeat(3, 45rem);
+
+    	/*fallbacks*/
+    	width: 73.1rem;
+    }
+    .main__card {
+    	/*fallbacks*/
+    	width: 34.8rem;
+    	height: 45rem;
+    	margin: auto;
+    }
+   .one, .two, .three, .four {
+    	/*fallbacks*/
+    	margin-bottom: 4.5rem; 
     }
     .one h4 {
     	position: relative;
@@ -327,7 +366,7 @@ body {
     	padding: 0 5.4rem;
     }
     .main__form-container h1 {
-    padding-right: 10.5rem;
+   	    padding-right: 10.5rem;
     }
 }
 
@@ -336,14 +375,26 @@ body {
     grid-template-columns: repeat(1, auto);
     grid-template-rows: repeat(6, 41.1rem);
     }
-    .one, .two, .three, .four, .five, .six {
+    .main__card {
     background-size: 36.6rem 21.1rem;
+
+    /*fallbacks*/
+    height: 41.1rem;
+    width: 45rem;
+    margin-bottom: 4.5rem;
+    }
+    .six {
+    /*fallbacks*/
+    margin-bottom: 0;
     }
 }
 
 @media all and (max-width: 540px) {
 	.main__list {
     grid-template-rows: repeat(6, 45rem);
+
+    /*fallbacks*/
+    width: 46.2rem;
     }
     .header__container {
     	width: auto;
@@ -356,6 +407,11 @@ body {
     .main {
     	padding: 0;
     }
+    .main__card {
+    	/*fallbacks*/
+    	height: 45rem;
+    	width: 100%;
+     }
     .main__form-container {
 	display: flex;
 	flex-direction: column;
@@ -368,5 +424,16 @@ body {
 	.main__search-container {
 	position: relative;
 	left: 0;
+	}
+}
+
+/*usimg media features for CSS GRID*/
+
+@supports (display: grid) {
+	.main__list {
+	width: auto;
+	}
+	.main__card {
+	margin: auto;
 	}
 }
