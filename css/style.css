@@ -136,9 +136,6 @@ a {
 		grid-template-columns: repeat(auto-fit, minmax(3.3rem, 1fr));
 	}
 
-	.body {
-		padding: 0 2rem;
-	}
 	.GRID__section {
 		width: 100%;
 		padding: 0 1rem;
