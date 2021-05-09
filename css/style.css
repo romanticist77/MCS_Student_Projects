@@ -137,7 +137,7 @@ a {
 	}
 
 	.body {
-		width: 90vw;
+		padding: 0 2rem;
 	}
 	.GRID__section {
 		width: 100%;
