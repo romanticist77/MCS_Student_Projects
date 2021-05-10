@@ -34,6 +34,12 @@ a {
 /*Настроил главный ГРИД*/
 
 .GRID {
+	/*fallbacks*/
+	display: flex;
+	flex-wrap: wrap;
+	width: 90rem;
+	padding: 5rem;
+	
 	margin: auto;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -41,12 +47,6 @@ a {
 	grid-row-gap: 1rem;
 	grid-column-gap: 3rem;
 	font-size: 1.4rem;
-
-	/*fallbacks*/
-	display: flex;
-	flex-wrap: wrap;
-	width: 90rem;
-	padding: 5rem;
 }
 .GRID__section {
 	/*fallbacks*/
@@ -144,6 +144,7 @@ a {
 		width: auto;
     }
     .GRID {
+
 		width: auto;
 		padding: 0;
 	}
