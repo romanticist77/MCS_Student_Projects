@@ -364,12 +364,6 @@ body {
 }
 
 @media all and (max-width: 540px) {
-	.form__label {
-		left: 14rem;
-	}
-	.form__select {
-		width: 18rem;
-	}
 	.main__list {
 	    grid-template-rows: repeat(6, 45rem);
 
