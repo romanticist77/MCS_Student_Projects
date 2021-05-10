@@ -17,21 +17,17 @@ html {
 	width: 36.4rem;
 	height: 44.8rem;
 }
-
 .main__list {
 	width: 115.5rem;
 	display: flex;
 	flex-wrap: wrap;
 }
-
 .five {
 	margin: 0 3rem;
 }
-
 .two {
 	margin: 0 3rem 4.5rem;
 }
-
 .one, .three {
 	margin: 0 0 4.5rem;
 }
@@ -42,7 +38,6 @@ html {
 	cursor: pointer;
 	color: black;
 }
-
 .link {
 	transition: all 200ms ease;
 }
@@ -59,7 +54,6 @@ body {
 .header {
 	width: 100%;
 }
-
 .header__container {
 	display: flex;
 	justify-content: space-between;
@@ -68,13 +62,11 @@ body {
 	height: 10.3rem;
 	width: 114.8rem;
 } 
-
 .header__logo {
 	width: 10.8rem;
 	height: 2.478rem;
 	align-self: center;
 }
-
 
 /* hedaer nav */
 
@@ -83,7 +75,6 @@ body {
 	justify-content: flex-end;
 	align-self: center;
 }
-
 .header__nav a {
 	text-decoration: none;
 	font-size: 1.7rem;
@@ -101,8 +92,6 @@ body {
 	position: relative;
 	left: 14rem;
 }
-
-
 .form__select {
 	height: 3.2rem;
 	width: 20rem;
@@ -112,11 +101,9 @@ body {
 	background-position: 14.5rem center;
 	border-color: transparent;
 }
-
 .form__select:hover {
 	cursor: pointer;
 }
-
 .form__select:focus {
 	font-size: 1.7rem;
 	color: #3333FF;
@@ -133,7 +120,6 @@ body {
 	display: flex;
 	width: 100%;
 }
-
 .main__container {
 	padding: 7.2rem 1.8rem 3.6rem;
 	margin: auto;
@@ -146,12 +132,10 @@ body {
 	height: 8.3rem;
 	margin: 0 0 7.2rem;
 }
-
 .main__form-container {
 	display: flex;
 	justify-content: space-between;
 }
-
 .main__search-container {
 	padding-top: 0.65rem;
 	display: flex;
@@ -169,13 +153,11 @@ body {
 	font-size: 2rem;
 	transition: border-color 200ms ease,outline 200ms ease;
 }
-
 .main__search-container input:hover {
 	outline-color: #0000FF;
 	border: 0.01rem solid #0000FF;
 	padding-left: 1.65rem;
 }
-
 .main__search-container input:focus {
 	color: black;
 	font-size: 2rem;
@@ -183,7 +165,6 @@ body {
 	border: 0.01rem solid #0000FF;
 	padding-left: 1.65rem;
 }
-
 .main__search-container input::after {
 	width: 2rem;
   	height: 2rem;
@@ -227,7 +208,6 @@ body {
 	grid-template-columns: repeat(3, 36.4rem);
 	grid-gap: 4.5rem 3rem;
 }
-
 .main__card {
 	border-radius: 0.5rem;
 	background-color: #FFFFFF;
@@ -236,20 +216,17 @@ body {
 	text-shadow: 0 0 0.1rem transparent;
 	transition: transform 200ms ease,background-color 200ms ease,box-shadow 200ms ease;
 }
-
 .main__card h3 {
 	padding: 0 5.4rem 5.4rem;
 	text-transform: uppercase;
 	font-size: 3.5rem;
 }
-
 .main__card h4 {
 	font-size: 2rem;
 	border-top: 0.3rem solid #FFFFFF;
 	margin: 0 3.6rem;
 	padding-top: 1rem;
 }
-
 .main__card:hover {
 	cursor: pointer;
 	transform: translate(0,-2rem);
@@ -265,41 +242,37 @@ body {
 	background-position: bottom;
 	background-size: contain;
 }
-
 .two {
 	background-image: url(../img/two.jpg);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: contain;
 }
-
 .three {
 	background-image: url(../img/three.png);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: contain;
 }
-
 .four {
 	background-image: url(../img/four.png);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: contain;
 }
-
 .five {
 	background-image: url(../img/five.jpg);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: contain;
 }
-
 .six {
 	background-image: url(../img/six.jpg);
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: contain;
 }
+
 /* footer */
 
 .footer {
@@ -308,7 +281,6 @@ body {
 	color: #3333FF;
 	font-size: 1.575rem;
 }
-
 .footer__container {
 	margin: auto;
 	width: 114.8rem;
@@ -318,7 +290,6 @@ body {
 	justify-content: space-between;
 	padding-top: 1.8rem;
 }
-
 .footer__container a {
 	text-decoration: none;
 	color: #3333FF;
@@ -372,29 +343,29 @@ body {
 
 @media all and (max-width: 720px) {
 	.main__list {
-    grid-template-columns: repeat(1, auto);
-    grid-template-rows: repeat(6, 41.1rem);
+	    grid-template-columns: repeat(1, auto);
+	    grid-template-rows: repeat(6, 41.1rem);
     }
     .main__card {
-    background-size: 36.6rem 21.1rem;
+  	    background-size: 36.6rem 21.1rem;
 
-    /*fallbacks*/
-    height: 41.1rem;
-    width: 45rem;
-    margin-bottom: 4.5rem;
+  	  /*fallbacks*/
+	    height: 41.1rem;
+	    width: 45rem;
+	    margin-bottom: 4.5rem;
     }
-    .six {
-    /*fallbacks*/
-    margin-bottom: 0;
+    .six {	  
+    	/*fallbacks*/
+	  	margin-bottom: 0;
     }
 }
 
 @media all and (max-width: 540px) {
 	.main__list {
-    grid-template-rows: repeat(6, 45rem);
+	    grid-template-rows: repeat(6, 45rem);
 
-    /*fallbacks*/
-    width: 46.2rem;
+	    /*fallbacks*/
+	    width: 46.2rem;
     }
     .header__container {
     	width: auto;
@@ -413,17 +384,17 @@ body {
     	width: 100%;
      }
     .main__form-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 1.8rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 1.8rem;
 	}
 	.main__search-container input {
-	padding-left: 0rem;
+		padding-left: 0rem;
 	}
 	.main__search-container {
-	position: relative;
-	left: 0;
+		position: relative;
+		left: 0;
 	}
 }
 
@@ -431,9 +402,9 @@ body {
 
 @supports (display: grid) {
 	.main__list {
-	width: auto;
+		width: auto;
 	}
 	.main__card {
-	margin: auto;
+		margin: auto;
 	}
 }
